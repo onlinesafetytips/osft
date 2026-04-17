@@ -1,0 +1,114 @@
+.hero {
+  padding-block: var(--sp-9) var(--sp-10);
+  border-bottom: var(--border-thin);
+}
+
+@media (min-width: 48rem) {
+  .hero {
+    padding-block: var(--sp-10) var(--sp-11);
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-8);
+  align-items: start;
+}
+
+@media (min-width: 60rem) {
+  .inner {
+    grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 22rem);
+    gap: var(--sp-9);
+  }
+}
+
+.copy {
+  max-width: 36rem;
+}
+
+.eyebrow {
+  font-size: var(--fs-13);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--sp-3);
+}
+
+.title {
+  font-size: clamp(1.9rem, 4vw + 1rem, 3rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin-top: var(--sp-4);
+  font-size: var(--fs-20);
+  color: var(--color-ink-2);
+  max-width: 36rem;
+  line-height: 1.5;
+}
+
+.actions {
+  margin-top: var(--sp-6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+
+.startCard {
+  background: var(--color-surface);
+  border: var(--border-thin);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-5);
+  box-shadow: var(--shadow-card);
+}
+
+.startTitle {
+  font-size: var(--fs-17);
+  color: var(--color-ink);
+  margin-bottom: var(--sp-1);
+}
+
+.startIntro {
+  color: var(--color-ink-2);
+  font-size: var(--fs-15);
+  margin-bottom: var(--sp-4);
+}
+
+.startList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.startLink {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: var(--sp-3);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: var(--color-ink);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.startLink:hover {
+  background: var(--color-accent-soft);
+  border-color: var(--color-border);
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.startLinkTitle {
+  font-weight: 600;
+  color: var(--color-accent);
+  font-size: var(--fs-15);
+}
+
+.startLinkNote {
+  color: var(--color-ink-2);
+  font-size: var(--fs-13);
+}

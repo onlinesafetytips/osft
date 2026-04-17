@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://online-safety-tips.com/sitemap.xml

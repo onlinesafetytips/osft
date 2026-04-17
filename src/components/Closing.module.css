@@ -1,0 +1,43 @@
+.section {
+  background: var(--color-surface-muted);
+  padding-block: var(--sp-10);
+}
+
+.inner {
+  max-width: 48rem;
+}
+
+.title {
+  font-size: var(--fs-24);
+  letter-spacing: -0.01em;
+  max-width: 28ch;
+}
+
+@media (min-width: 48rem) {
+  .title {
+    font-size: var(--fs-30);
+  }
+}
+
+.body {
+  margin-top: var(--sp-4);
+  color: var(--color-ink-2);
+  font-size: var(--fs-17);
+  line-height: 1.6;
+}
+
+.meta {
+  margin-top: var(--sp-6);
+  color: var(--color-ink-3);
+  font-size: var(--fs-15);
+}
+
+.back {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: rgb(31 93 107 / 0.3);
+}
+
+.back:hover {
+  text-decoration-color: currentColor;
+}

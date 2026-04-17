@@ -1,0 +1,22 @@
+node_modules
+dist
+dist-ssr
+.vite
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.local
+
+# Local-only docs and scratch files (not needed to build the site)
+README.md
+content.txt

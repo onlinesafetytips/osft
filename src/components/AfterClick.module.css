@@ -1,0 +1,49 @@
+.section {
+  background: var(--color-surface-muted);
+}
+
+.steps {
+  margin-top: var(--sp-7);
+  counter-reset: step;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+  max-width: 48rem;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--sp-4);
+  align-items: start;
+  padding: var(--sp-5);
+  background: var(--color-surface);
+  border: var(--border-thin);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.number {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--color-accent);
+  font-size: var(--fs-17);
+  letter-spacing: 0.03em;
+  min-width: 2.25rem;
+}
+
+.stepBody {
+  min-width: 0;
+}
+
+.stepTitle {
+  font-size: var(--fs-17);
+  color: var(--color-ink);
+  margin-bottom: 0.25rem;
+}
+
+.stepText {
+  color: var(--color-ink-2);
+  font-size: var(--fs-15);
+  line-height: 1.6;
+}
